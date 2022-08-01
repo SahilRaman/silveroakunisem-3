@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title>
+        sem-3
+    </title>
+</head>
+
+<body>
+    <style>
+        .p1 {
+           
+           font-size: 20px;
+           margin: 10px;
+            
+        }
+
+        .p2 {
+           
+            font-size: 25px;
+            margin: 10px;
+        }
+        .p3{
+            font-size: 20px;
+            margin: 10px;
+        }
+        .p4{
+            font-size: 25px;
+            margin: 10px;
+        }
+        .p5{
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        
+
+        
+    </style>
+    <script>
+        function lightpink() {
+            document.bgColor = "lightpink";
+        }
+        function add() {
+            const a = parseInt(txta.value);
+            const b = parseInt(txtb.value);
+
+            txtans.value = a + b;
+            alert(txtans.value)
+        }
+
+        function sub() {
+            const a = parseInt(txta.value);
+            const b = parseInt(txtb.value);
+
+            txtans.value = a - b;
+            alert(txtans.value);
+        }
+
+        function mul() {
+            const a = parseInt(txta.value);
+            const b = parseInt(txtb.value);
+
+            txtans.value = a * b;
+            alert(txtans.value);
+        }
+        function div() {
+            const a = parseInt(txta.value);
+            const b = parseInt(txtb.value);
+
+            txtans.value = a / b;
+            alert(txtans.value);
+        }
+        function clr() {
+            txta.value = " ";
+            txtb.value = " ";
+        } 
+    </script>
+    <center> <input type="button" onclick="lightpink()" id="lightpink"></center>
+    enter value of a: <input type="text" value="0" width="200px" id="txta" /><br>
+    enter value of b: <input type="text" value="0" width="200px" id="txtb" /><br>
+    answer: <input type="text" value="0" width="200px" id="txtans" />
+
+
+    <center>
+      <div> <input type="button" id="btadd" onclick="add()" value="+" style="background-color: rgb(98, 98, 100);"class="p1" size="100px" /><br> </div>
+        <input type="button" onclick="sub()" value="-" style="background-color: darkgray;" class="p2" /><br>
+        <input type="button" onclick="mul()" value="*" style="background-color: lightblue;" class="p3" /><br>
+        <input type="button" onclick="div()" value="/" style="background-color:lightgreen;" class="p4" /><br>
+        <input type="button" onclick="clr()" value=" " style="background-color:lightskyblue ;" class="p5" />
+    </center>
+
+
+</body>
+
+</html>
